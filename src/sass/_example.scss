@@ -1,27 +1,109 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+* {
+  box-sizing: border-box;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.example .background {
-  height: 240px;
-  // Путь к изображениям из SASS-файла всегда такой, как из папки css
-  background-image: url('../images/demo.jpg');
-  background-size: cover;
-  background-position: center;
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: rgb(156, 75, 146);
+}
+
+.wrapper-box {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+  flex-basis: calc((100% - 70px) / 3);
+}
+.btn {
+  display: block;
+  background-color: #a6d400;
+  margin: 15px;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+.btn:hover {
+  background-color: #646b4c;
+  color: pink;
+}
+.load-more {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.load-more.is-hidden {
+  display: none;
+}
+
+.info {
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: rgb(231, 182, 231);
+}
+
+.text {
+  font-weight: normal;
+  font-size: 11px;
 }

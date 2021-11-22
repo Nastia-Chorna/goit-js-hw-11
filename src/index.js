@@ -18,7 +18,7 @@ refs.loadMoreBtn.classList.add('is-hidden');
 
 function onSubmitClick(event) {
     event.preventDefault();
-    searchQuery = event.currentTarget.elements.searchQuery.value;
+    searchQuery = event.currentTarget.elements.searchQuery.value.trim();
     refs.loadMoreBtn.classList.add('is-hidden');    
     refs.gallery.innerHTML = '';
     page = 1;
